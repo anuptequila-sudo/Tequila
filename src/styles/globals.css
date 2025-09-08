@@ -1,0 +1,546 @@
+/* Global Reset */
+
+/* ------------------------------
+   FONT IMPORTS
+   ------------------------------ */
+
+/* OverusedGrotesk Medium for headings */
+@font-face {
+  font-family: "OverusedGroteskLight";
+  src: url("/font/OverusedGrotesk-Light.ttf") format("truetype");
+  font-style: normal;
+}
+
+/* InstrumentSerif Regular for body text */
+@font-face {
+  font-family: "InstrumentSerifRegular";
+  src: url("/font/InstrumentSerif-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+/* ClashGrotesk Variable for nav and spans */
+@font-face {
+  font-family: "ClashGroteskVariable";
+  src: url("/font/ClashGrotesk-Variable.ttf") format("truetype");
+  font-style: normal;
+}
+
+/* OverusedGrotesk SemiBold (optional, if needed somewhere) */
+@font-face {
+  font-family: "OverusedGroteskSemiBold";
+  src: url("/font/OverusedGrotesk-SemiBold.ttf") format("truetype");
+  font-style: normal;
+}
+
+/* ------------------------------
+   FONT USAGE
+   ------------------------------ */
+
+/* Headings (h1-h6) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "OverusedGroteskLight", sans-serif;
+}
+
+/* Body text (p, li, etc.) */
+span {
+  font-family: "InstrumentSerifRegular", serif;
+}
+
+/* Nav items and span elements */
+nav,  li, body, p  {
+  font-family: "ClashGroteskVariable", sans-serif;
+}
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+h2{
+  font-size: 95.95px;
+  line-height: 122%;
+  font-weight: 200;
+}
+
+
+
+
+/* ========================
+   THEME VARIABLES
+   ======================== */
+
+/* Default: Dark Theme */
+:root {
+  --bg: #0d0d0d;         /* Premium black */
+  --text: #f5f5f5;       /* Premium white */
+  --accent: #ffffff;     /* Use white accents only */
+
+  --font-sm: 14px;
+  --font-md: 16px;
+  --font-lg: 20px;
+  --font-xl: 28px;
+
+  --radius: 20px;
+  --space-xs: 6px;
+  --space-sm: 10px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+
+
+   /* Typography */
+  --font-size-h1: 3.2rem;
+  --font-size-h4: 2rem;
+
+  /* Spacing */
+  --padding-large: 30vh;
+  --gap-large: 80px;
+  --section-height: 100vh;
+
+  /* Buttons */
+  --btn-padding: 0.8rem 1.6rem;
+  --btn-radius: 6px;
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --bg: #f5f5f5;        /* Premium white */
+  --text: #0d0d0d;      /* Premium black */
+  --accent: #0d0d0d;    /* Use black accents only */
+}
+
+/* Links Reset */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Buttons Reset */
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  padding-top: var(--padding-large); /* 40vh padding */
+  overflow: hidden;
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+/* Wrapper 3-column layout */
+.hero-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 2;
+  padding: var(--space-lg);
+}
+
+/* Left 30% */
+.hero-left {
+  width: 40%;
+  text-align: right;
+  margin-top: 5rem;
+      margin-bottom: -4rem;
+}
+
+.hero-left h1 {
+  font-size: var(--font-size-h1);
+  line-height: 1.2;
+}
+
+.hero-left .highlight-line.hero-highlight {
+    padding: 0 5rem;
+    position: relative;      
+    margin-left: 3rem;
+}
+
+.hero-left .highlight-line.hero-highlight::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 5px;
+  background: var(--accent);
+}
+
+/* Gap 8% */
+.gap {
+  width: 8%;
+}
+
+/* Middle 40% */
+.hero-middle {
+  width: 40%;
+  text-align: left;
+}
+
+.hero-middle span , .hero-text.about-line{
+  font-size: 36.65px;
+  line-height: 122%;
+  margin-bottom: var(--space-md);
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: var(--space-sm);
+      margin-top: var(--space-md);
+}
+
+/* Reuse global button styles */
+.btn {
+  padding: var(--btn-padding);
+  border-radius: var(--btn-radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Primary button */
+.btn-primary {
+  background: var(--color-white);
+  color: var(--color-black);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #e5e5e5;
+}
+
+/* Secondary button */q
+.btn-secondary {
+  background: transparent;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+}
+
+.btn-secondary:hover {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+/* Right 20% */
+.hero-right {
+  width: 20%;
+}
+
+/* Video Background */
+.hero-video {
+     margin-top: -4%;
+  height: 100%;
+  overflow: hidden;
+  clip-path: polygon(42% 6%, 42% 0, 100% 0, 100% 100%, 0 100%, 0 6%);
+  position: relative;
+}
+
+.hero-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-video {
+  margin: 0 auto;
+  transition: width 0.3s ease;
+}
+
+
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15vh 2vw;
+  min-height: 30vh;
+}
+
+.about-left {
+  width: 40%;
+}
+
+.about-left h2 {
+  margin-bottom: 3.5rem;
+}
+
+.hero-text {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  padding-right: 5rem;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding-left: 8rem;
+}
+
+.about-description .right-line {
+  display: block;
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.about-description .left-line {
+  display: block;
+  text-align: left;
+}
+
+.about-gap {
+  width: 20%;
+}
+
+.about-right {
+  width: 60%;
+  text-align: left;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: right;
+  padding: 0 10vw;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 0 10vw;
+  
+}
+
+.about-line{
+    margin-bottom: 1.5rem;
+}
+
+.grid-item {
+  position: relative;
+}
+
+.grid-item .title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.grid-item .title::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: rgb(233, 231, 231);
+  margin-top: 0.25rem;
+  margin-left: auto;
+}
+
+.grid-item .number {
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+
+/* Hide the normal cursor */
+/* html, body {
+  cursor: none;
+} */
+
+/* Overlay canvas for fluid cursor */
+/* SoapBubbleCursor background */
+.soap-bubble-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  pointer-events: none;
+  user-select: none;
+  background: radial-gradient(circle at center, #0b1220 0%, #000000 100%);
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 9999;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+/* Position prev button to the left of next */
+.swiper-button-prev {
+  right: 60px; /* adjust as needed */
+}
+
+/* Common arrow styles */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  box-sizing: border-box;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Left arrow */
+.swiper-button-prev::after {
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+/* Right arrow */
+.swiper-button-next::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.description-highlight-space{
+  padding: 0 4rem;
+}
+
+
+
+/* footer */
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: #111;
+  color: #fff;
+  padding: 40px 60px;
+  font-family: sans-serif;
+}
+
+.footer-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Group 1 (30%) */
+.footer-left {
+  flex: 0 0 30%;
+}
+.footer-logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+.footer-address {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer-btn {
+  margin: 10px 0;
+  padding: 8px 16px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+.footer-btn:hover {
+  background: #fff;
+  color: #111;
+}
+.footer-phone {
+      font-size: 2.5rem;
+  margin-top: 10px;
+}
+
+/* Group 2 (50%) */
+.footer-middle {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+      flex-direction: row;
+}
+.footer-menu h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  position: relative;
+}
+.footer-menu h4::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: #fff;
+  margin-top: 5px;
+}
+.footer-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-menu li {
+  font-size: 13px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+.footer-menu li:hover {
+  text-decoration: underline;
+}
+
+/* Group 3 (20%) */
+.footer-right {
+  flex: 0 0 20%;
+  display: flex;
+  gap: 40px;
+}
+.footer-col h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-col li {
+  font-size: 13px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+.footer-col li:hover {
+  text-decoration: underline;
+}
+
+.footer-btn{
+  width: 20%;
+  font-size: 0.6rem !important;
+}

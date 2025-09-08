@@ -1,0 +1,161 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  background: #000;
+  padding: 40px 20px;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65vh;
+}
+
+.doubleSlide {
+  grid-column: span 2 !important;
+  width: 30% !important; /* take 2 slots + gap */
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  /* border-radius: 8px; */
+}
+
+.textBox {
+  min-height: -webkit-fill-available;
+  align-content: end;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 40px;
+  /* border-radius: 8px; */
+  /* clip-path: polygon(42% 4%, 42% 0, 100% 0, 100% 100%, 0 100%, 0 4%); */
+}
+
+.textBox h3 {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+  line-height: 1;
+  font-weight: 200;
+}
+
+.textBox p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.textBox span {
+  font-size: 0.85rem;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+/* Custom Navigation */
+.navBtns {
+  position: absolute;
+  bottom: -10px;
+  right: 100px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.prevBtn,
+.nextBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+  opacity: 0.7;
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.popupInner {
+  position: relative;
+  width: 80%;
+  max-width: 900px;
+}
+
+.popupVideo {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: #000;
+}
+
+.closeBtn {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.tag{
+  position:absolute;
+  top:0;
+  left:0;
+  padding: 5px 10px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background: #000;
+  opacity: 1 !important;
+
+}
+
+.wrapper {
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #000;
+  color: #fff;
+  padding: 10rem 40px;
+  gap: 20px;
+}
+
+.groupOne {
+  width:40%;
+}
+
+.groupOne h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+    font-size: 5.5rem;
+    font-weight: 200;
+}
+
+.groupOne h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
