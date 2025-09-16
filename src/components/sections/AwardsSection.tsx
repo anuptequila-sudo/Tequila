@@ -5,13 +5,13 @@ import gsap from "gsap";
 import "@/styles/AwardsSection.css";
 
 const awards = [
-  { year: "2025", company: "Clutch", title: "Top Branding Agency", image: "/images/Logo.svg" },
-  { year: "2024", company: "Sortlist", title: "Best Logo Design", image: "/images/Logo.svg" },
-  { year: "2024", company: "Awwwards", title: "UI/UX Excellence", image: "/images/Logo.svg" },
-  { year: "2023", company: "DesignRush", title: "Creative Agency Award", image: "/images/Logo.svg" },
-  { year: "2022", company: "Behance", title: "Featured Project", image: "/images/Logo.svg" },
-  { year: "2021", company: "GoodFirms", title: "Top Web Development", image: "/images/Logo.svg" },
-  { year: "2021", company: "Dribbble", title: "Inspiration Pick", image: "/images/Logo.svg" },
+  { year: "2025", company: "Clutch", title: "Top Branding Agency", image: "/images/awards1.png" },
+  { year: "2024", company: "Sortlist", title: "Best Logo Design", image: "/images/awards1.png" },
+  { year: "2024", company: "Awwwards", title: "UI/UX Excellence", image: "/images/awards1.png" },
+  { year: "2023", company: "DesignRush", title: "Creative Agency Award", image: "/images/awards1.png" },
+  { year: "2022", company: "Behance", title: "Featured Project", image: "/images/awards1.png" },
+  { year: "2021", company: "GoodFirms", title: "Top Web Development", image: "/images/awards1.png" },
+  { year: "2021", company: "Dribbble", title: "Inspiration Pick", image: "/images/awards1.png" },
 ];
 
 export default function AwardsSection() {

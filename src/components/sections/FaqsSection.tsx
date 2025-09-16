@@ -46,10 +46,11 @@ export default function FaqsSection() {
       {/* Left Side */}
       <div className={styles.groupOne}>
         <h2>FAQ</h2>
-        <h4>
+        <span >
          <span className="description-highlight-space"></span> Got questions about branding & web design? We’ve answered the most
           common ones right here for you.
-        </h4>
+        </span>
+        <h2>  </h2>
         <Button variant="primary">CONTACT US →</Button>
       </div>
 
@@ -67,10 +68,10 @@ export default function FaqsSection() {
             onClick={() => toggleFaq(index)}
           >
             <div className={styles.faqQuestion}>
-              <span>{faq.question}</span>
-              <span className={styles.arrow}>
+              <p>{faq.question}</p>
+              <p className={styles.arrow}>
                 {activeIndex === index ? "∧" : "∨"}
-              </span>
+              </p>
             </div>
             {activeIndex === index && (
               <div className={styles.faqAnswer}>{faq.answer}</div>

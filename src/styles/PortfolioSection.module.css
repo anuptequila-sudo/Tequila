@@ -12,20 +12,16 @@
 }
 
 .headerTitle {
-  flex: 0 0 20%;
-  font-size: 2.5rem;
-  font-weight: bold;
+  flex: 0 0 40%;
 }
 
 .headerGap {
-  flex: 0 0 40%;
+  flex: 0 0 30%;
 }
 
 .headerText {
   flex: 0 0 30%;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  opacity: 0.85;
+  font-size: 1.3rem;
 }
 
 .portfolioDetail {
@@ -34,6 +30,7 @@
   gap: 20px;
   position: relative;
   transform-style: preserve-3d;
+      overflow: hidden;
 }
 
 .portfolioCard {
@@ -66,14 +63,13 @@
 
 .cardTitle {
   margin-top: 1.5rem;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 2rem;
 }
 
 .cardSubtitle {
   margin-top: 0.5rem;
-  font-size: 1rem;
-  opacity: 0.7;
+  font-size: 2rem;
+  font-weight: 100;
 }
 
 .spaceparagraph {
@@ -91,3 +87,6 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+

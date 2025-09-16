@@ -1,0 +1,66 @@
+.information-header-band {
+  background-color: #ffd400;
+  color: #000000;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 4rem; /* gap between repeats */
+  will-change: transform;
+}
+
+.information-header-band h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.information-header-band-image {
+  width: 3rem;
+  height: auto;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
+
+.information-container {
+  position: relative;
+  padding: 2rem;
+}
+
+.information-item-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.information-header-description,
+.information-header-description-span {
+  font-size: 3.5rem;
+}
+
+.information-header-contact {
+  font-size: 3.5rem;
+}
+
+.information-item-second {
+  justify-self: end;
+  margin-top: 30vh;
+}
+
+.information-header {
+  margin-bottom: -1rem;
+  position: relative;
+  z-index: -2;
+      background-color: #ffd400;
+      overflow: hidden;
+}

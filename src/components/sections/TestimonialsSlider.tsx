@@ -26,7 +26,8 @@ export default function TestimonialsSlider() {
       about delivering web design services—they are brand creators who truly elevate
       your imagination.`,
       author: "RAVI KOTWANI",
-      role: "CEO, XTASY",
+      role: "CEO,",
+      company: "XTASY",
       tag: "Premium Lingerie Brand",
 
     },
@@ -39,6 +40,18 @@ export default function TestimonialsSlider() {
       src: "/images/bannerv2.mp4",
     },
     {
+      type: "text",
+      title: "Exceptional Creativity and Professionalism!",
+      desc: `Working with Team Tequila has been an absolutely incredible experience!
+      From the very first interaction, it was evident that this team is not just
+      about delivering web design services—they are brand creators who truly elevate
+      your imagination.`,
+      author: "RAVI KOTWANI",
+      role: "XTASY",
+      company: "XTASY",
+      tag: "Premium Lingerie Brand",
+    },
+    {
       type: "video",
       src: "/images/bannerv2.mp4",
     },
@@ -49,11 +62,7 @@ export default function TestimonialsSlider() {
     {
       type: "video",
       src: "/images/bannerv2.mp4",
-    },
-    {
-      type: "video",
-      src: "/images/bannerv2.mp4",
-    },
+    },   
      {
       type: "text",
       title: "Exceptional Creativity and Professionalism!",
@@ -62,9 +71,26 @@ export default function TestimonialsSlider() {
       about delivering web design services—they are brand creators who truly elevate
       your imagination.`,
       author: "RAVI KOTWANI",
-      role: "CEO, XTASY",
+      role: "XTASY",
+      company: "XTASY",
       tag: "Premium Lingerie Brand",
     },
+     {
+      type: "video",
+      src: "/images/bannerv2.mp4",
+    },
+     {
+      type: "video",
+      src: "/images/bannerv2.mp4",
+    },
+     {
+      type: "video",
+      src: "/images/bannerv2.mp4",
+    },
+     {
+      type: "video",
+      src: "/images/bannerv2.mp4",
+    }
   ];
 
   return (
@@ -72,11 +98,11 @@ export default function TestimonialsSlider() {
           {/* Left Side */}
           <div className={styles.groupOne}>
             <h2>CLIENT LOVE</h2>
-            <h4>
-            <span className="description-highlight-space"></span> Partnerships that last, stories
-that resonate-from clients and partners
-turned brand ambassadors.
-            </h4>
+            <span  className={styles.spandescription}>
+              <span className="description-highlight-space"></span> Partnerships that last, stories
+  that resonate-from clients and partners
+  turned brand ambassadors.
+              </span>
           </div>
            <div className={styles.gap}></div>
       <div className={styles.wrapper}>
@@ -84,6 +110,7 @@ turned brand ambassadors.
           modules={[Navigation]}
           spaceBetween={20}
           slidesPerView={4}
+          slidesPerGroup={4}
           navigation={{
             nextEl: `.${styles.nextBtn}`,
             prevEl: `.${styles.prevBtn}`,
@@ -108,12 +135,15 @@ turned brand ambassadors.
                 />
               ) : (
                 <div className={styles.textBox}>
-                  <h3>{item.title}</h3>
-                  <p>{item.desc}</p>
-                  <span>
-                    {item.author}, {item.role}
-                  </span>
-                  <span className={styles.tag}>{item.tag}</span>
+                  <span className={styles.testiDescriptionHighlight}>"{item.title}"</span>
+                  <p  className={styles.testiDescriptiontext}>{item.desc}</p>
+                  <p>
+                    {item.author}
+                  </p>
+                  <p className={styles.roletesti}>
+                    {item.role},  {item.company}
+                  </p> 
+                  <p className={styles.tag}>{item.tag}</p>
                 </div>
               )}
             </SwiperSlide>

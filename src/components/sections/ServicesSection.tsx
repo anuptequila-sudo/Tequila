@@ -201,7 +201,7 @@ if (big) {
 
       <div className={styles.servicesSectionHeadingContainer}>
         <h3 className={styles.servicesSectionHeading}>Tailored for Bold Brands</h3>
-        <p className={styles.servicesSectionHeroHeading}><span className={styles.spaceparagraph}></span>We help your brand show up smarter, sharper, and stronger at every touchpoint.</p>
+        <span className={styles.servicesSectionHeroHeading}><span className={styles.spaceparagraph}></span>We help your brand show up smarter, sharper, and stronger at every touchpoint.</span>
       </div>
 
       <div className={styles.overlay}>
@@ -209,29 +209,29 @@ if (big) {
         <div className={styles.card}>
           {/* SVG (level 2 background) is injected by JS */}
           <div className={styles.insidecard}>
-            <span className={`${styles.tag} ${styles.cutout}`}>
+            <p className={`${styles.tag} ${styles.cutout}`}>
               TEQNOLOGY
-            </span>
+            </p>
 
             <h2>Web Design & Development</h2>
-            <p>
+            <p className={styles.paragraph}>
               Building your digital headquarters — websites that think smart, and
               feel right.
             </p>
 
             <div className={styles.pills}>
-              <span className={styles.cutout}>Custom Website Design & Development</span>
-              <span className={styles.cutout}>Domain & Hosting Management</span>
-              <span className={styles.cutout}>Ecommerce Website Design</span>
-              <span className={styles.cutout}>Website Maintenance</span>
-              <span className={styles.cutout}>Web Applications</span>
+              <p className={styles.cutout}>Custom Website Design & Development</p>
+              <p className={styles.cutout}>Domain & Hosting Management</p>
+              <p className={styles.cutout}>Ecommerce Website Design</p>
+              <p className={styles.cutout}>Website Maintenance</p>
+              <p className={styles.cutout}>Web Applications</p>
             </div>
 
             
           </div>
           {/* bigText is measured and then used to punch letter holes */}
             <div className={styles.bigTextContainer}>
-              <span className={styles.caption}>(technology)</span>
+              <p className={styles.caption}>(technology)</p>
               <span className={`${styles.bigText} ${styles.cutout}`} aria-hidden="true">
                 TEQ
               </span>
@@ -241,23 +241,23 @@ if (big) {
         {/* Card 2 */}
         <div className={styles.card}>
           <div className={styles.insidecard}>
-            <span className={`${styles.tag} ${styles.cutout}`}>IDENTITY & DESIGN</span>
+            <p className={`${styles.tag} ${styles.cutout}`}>IDENTITY & DESIGN</p>
             <h2>Branding</h2>
-            <p>
+            <p className= {styles.paragraph}>
               Crafting strategic brands with purpose, clarity, and emotion —
               built to lead everywhere.
             </p>
             <div className={styles.pills}>
-              <span className={styles.cutout}>Logo & Visual Identity</span>
-              <span className={styles.cutout}>Brand Strategy</span>
-              <span className={styles.cutout}>Rebranding</span>
-              <span className={styles.cutout}>UI/UX Design</span>
-              <span className={styles.cutout}>Corporate Profile</span>
-              <span className={styles.cutout}>Graphic Design</span>
+              <p className={styles.cutout}>Logo & Visual Identity</p>
+              <p className={styles.cutout}>Brand Strategy</p>
+              <p className={styles.cutout}>Rebranding</p>
+              <p className={styles.cutout}>UI/UX Design</p>
+              <p className={styles.cutout}>Corporate Profile</p>
+              <p className={styles.cutout}>Graphic Design</p>
             </div>
           </div>
             <div className={styles.bigTextContainer}>
-              <span className={styles.caption}>(user interface)</span>
+              <p className={styles.caption}>(user interface)</p>
               <span className={`${styles.bigText} ${styles.cutout}`} aria-hidden="true">
                 UI
               </span>              
@@ -267,18 +267,18 @@ if (big) {
         {/* Card 3 */}
         <div className={styles.card}>
           <div className={styles.insidecard}>
-            <span className={`${styles.tag} ${styles.cutout}`}>VISUAL STORYTELLING</span>
+            <p className={`${styles.tag} ${styles.cutout}`}>VISUAL STORYTELLING</p>
             <h2>Communication</h2>
-            <p>Elevating your brand&apos;s social presence with strategy &amp; design.</p>
+            <p className={styles.paragraph}>Elevating your brand&apos;s social presence with strategy &amp; design.</p>
             <div className={styles.pills}>
-              <span className={styles.cutout}>Video Storyboarding</span>
-              <span className={styles.cutout}>Photography</span>
-              <span className={styles.cutout}>Social Media Strategy</span>
-              <span className={styles.cutout}>SEO</span>
+              <p className={styles.cutout}>Video Storyboarding</p>
+              <p className={styles.cutout}>Photography</p>
+              <p className={styles.cutout}>Social Media Strategy</p>
+              <p className={styles.cutout}>SEO</p>
             </div>
           </div>
             <div className={styles.bigTextContainer}>
-               <span className={styles.caption}>(la la land)</span>
+               <p className={styles.caption}>(la la land)</p>
               <span className={`${styles.bigText} ${styles.cutout}`} aria-hidden="true">
                 LA
               </span>              

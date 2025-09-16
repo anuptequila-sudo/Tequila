@@ -6,6 +6,10 @@ import PortfolioSection from "@/components/sections/PortfolioSection";
 import TestimonialsSlider from "@/components/sections/TestimonialsSlider";
 import FaqsSection from "@/components/sections/FaqsSection";
 import SoapBubbleCursor from "@/components/layout/SoapBubbleCursor";
+import BlogSection from "@/components/sections/BlogSection";
+import ContactSection from "@/components/sections/ContactSection";
+import InformationSection from "@/components/sections/InformationSection";
+import SmoothScroll from "@/components/layout/SmoothScroll";
 
 
 
@@ -13,7 +17,6 @@ import SoapBubbleCursor from "@/components/layout/SoapBubbleCursor";
 export default function HomePage() {
   return (
     <>
-      <SoapBubbleCursor />
       <HeroSection />
       <AboutSection />
       <ServicesSection />
@@ -21,6 +24,9 @@ export default function HomePage() {
       <PortfolioSection />
       <TestimonialsSlider />
       <FaqsSection />
+      <BlogSection />
+      <ContactSection />
+      <InformationSection />
     </>
   );
 }

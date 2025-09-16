@@ -105,7 +105,7 @@
 
 .sticky-header {
   position: fixed;
-  bottom: 10vh;
+  bottom: 8vh;
   z-index: 999;
   display: flex;
   justify-content: center;
@@ -113,7 +113,7 @@
   transition: all 0.3s ease;
   padding: 10px 0;
   backdrop-filter: blur(10px);
-  width: 40%;
+  width: 30%;
     justify-self: center;
     border-radius: 65px;
 }
@@ -139,6 +139,7 @@
 
 .sticky-menu ul a , .sticky-menu ul .has-dropdown{
       font-size: 14px;
+      display: block;
 }
 
 .sticky-menu .has-dropdown:hover .dropdown {
@@ -147,13 +148,15 @@
 
 .dropdown {
   position: absolute;
-  top: 100%;
-  left: 0;
+  bottom: 100%;
+  left: -20%;
   display: none;
-  background-color: inherit;
+      background: #111;
+    padding: 30px;
   color: inherit;
-  padding: 10px;
+  padding: 20px 40px;
   gap: 20px;
+      width: max-content;
 }
 
 .dropdown-columns {
@@ -169,4 +172,26 @@
 
 .sticky-menu{
   padding: 10px;
+}
+.sticky-menu .sticky-sub-group.sticky-sub-middle{
+  display:inherit;
+}
+.sticky-menu .sticky-sub-group.sticky-sub-middle .sticky-sub-menu{
+  margin-right: 3rem;
+}
+
+.sticky-menu .sticky-sub-group.sticky-sub-middle .sticky-sub-menu ul{
+  display:grid;
+}
+
+.sticky-menu .sticky-sub-group.sticky-sub-middle  .sticky-sub-menu ul{
+  gap:8px;
+}
+
+.sticky-sub-menu h4{
+  margin-bottom:1.5rem;
+}
+
+.sticky-menu .sticky-sub-group.sticky-sub-middle  .sticky-sub-menu ul li{
+  font-size: 13px;
 }

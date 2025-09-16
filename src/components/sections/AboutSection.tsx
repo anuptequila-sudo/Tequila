@@ -47,7 +47,7 @@ export default function AboutSection() {
           that not only designs and builds, but crafts brands with intellect, heart, and future-readiness. Not just aesthetic 
           designs or websites, but strategic experiences.
         </p>
-         <Button variant="primary">Explore Services</Button>
+         <Button variant="primary">MEET TEQUILA</Button>
         </div>
       </div>
 
